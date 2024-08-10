@@ -1,0 +1,71 @@
+---
+import TeamCard from './teamCard.astro'
+
+const team = [
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Director Ejecutivo, lidero la visión y estrategia general de la empresa, asegurándome de que todos los departamentos trabajen de manera cohesionada para alcanzar nuestros objetivos a largo plazo. Mi enfoque está en la toma de decisiones clave que impulsan el crecimiento y la sostenibilidad de nuestra organización.',
+    name: 'Zebra',
+    position: 'Director ejecutivo'
+  },
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Director de Operaciones, superviso la eficiencia y efectividad de todas las operaciones diarias de la empresa. Mi papel es asegurar que los procesos internos funcionen de manera fluida, optimizando recursos y mejorando continuamente nuestras operaciones para cumplir con los objetivos estratégicos.',
+    name: 'Zebra',
+    position: 'Director de operaciones'
+  },
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Director de Ingresos, soy responsable de maximizar el potencial de ingresos de la empresa. Mi objetivo es alinear nuestras estrategias de ventas, marketing y atención al cliente para impulsar el crecimiento, mejorar la experiencia del cliente y optimizar nuestras fuentes de ingresos.',
+    name: 'Zebra',
+    position: 'Director de ingresos'
+  },
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Director de Tecnología, lidero la innovación y desarrollo tecnológico de la empresa. Mi responsabilidad es asegurar que nuestra infraestructura tecnológica sea robusta, segura y escalable, apoyando el crecimiento del negocio y manteniéndonos a la vanguardia en un entorno competitivo.',
+    name: 'Zebra',
+    position: 'Director de tecnologia'
+  },
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Director de Talentos y Transformación, mi misión es desarrollar y retener el mejor talento, al tiempo que impulso la transformación organizacional. Estoy comprometido en crear un ambiente laboral que fomente el crecimiento, la innovación y la adaptación al cambio, alineando a nuestro equipo con los objetivos estratégicos de la empresa.',
+    name: 'Zebra',
+    position: 'Director de talentos y transformacion'
+  },
+  {
+    imgURL: 'https://cdn-icons-png.flaticon.com/512/4042/4042356.png',
+    desc: 'Como Vicepresidente de Mercados y Regulación, mi función es garantizar que nuestras operaciones cumplan con todas las normativas aplicables y que estemos bien posicionados en los mercados donde operamos. Trabajo para proteger y potenciar la reputación de la empresa mientras navego por el complejo panorama regulatorio.',
+    name: 'Zebra',
+    position: 'Vicepresidente de mercados y regulacion'
+  },
+]
+---
+
+<div class='teamGrid-container'>
+  <h1>NUESTRO EQUIPO</h1>
+  <div class='cardsContainer'>
+    {
+    team.map(item => 
+      <TeamCard imgURL={item.imgURLa} name={item.name} desc={item.desc} position={item.position}/>
+    )
+    }
+  </div>
+</div>
+
+<style>
+  .teamGrid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    background: orange;
+  }
+
+  .cardsContainer {
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    overflow-x: scroll;
+  }
+</style>
