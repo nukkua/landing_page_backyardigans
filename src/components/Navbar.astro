@@ -1,0 +1,65 @@
+---
+
+---
+<header class="bg-white py-5 px-6">
+	<nav class="flex flex-col md:flex-row">
+		<div class="flex items-center">
+			<a href="" class="font-bold flex items-center text-2xl">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="50px" height="50px">
+				  
+				  <circle cx="50" cy="35" r="20" fill="#2ecc71"/>
+				  <rect x="45" y="35" width="10" height="35" fill="#27ae60"/>
+				</svg>
+				Backyardigans S.A
+			</a>
+
+			<button id="menu-btn" class="ml-auto md:hidden focus:outline-none">
+			    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+			    </svg>
+			</button>
+
+		</div>
+
+        <ul id="menu">
+            <li >
+		    <a href="/" class="">Inicio</a>
+            </li>
+            <li>
+		    <a href="/" class="">Sobre Nosotros</a>
+            </li>
+            <li>
+		    <a href="/" class="">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('open');
+    });
+</script>
+
+<style>
+
+ul {
+	@apply hidden flex-col md:flex md:flex-row justify-between ml-auto gap-x-6 text-xl mt-5;
+}
+li {
+	@apply border-t border-black py-3;
+	@apply md:py-0 md:border-none;
+}
+a {
+	@apply hover:text-slate-500;
+}
+
+@media (max-width: 768px) {
+	#menu.open {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
+</style>
