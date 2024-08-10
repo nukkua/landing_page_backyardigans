@@ -1,0 +1,88 @@
+---
+import BackyardigansIcon from "./svg/BackyardigansIcon.astro";
+import FacebookIcon from "./svg/FacebookIcon.astro";
+import InstagramIcon from "./svg/InstagramIcon.astro";
+import LinkedlnIcon from "./svg/LinkedlnIcon.astro";
+import TelegramIcon from "./svg/TelegramIcon.astro";
+import TiktokIcon from "./svg/TiktokIcon.astro";
+import YoutubeIcon from "./svg/YoutubeIcon.astro";
+
+
+---
+
+
+<footer class="px-2 py-10 mt-auto lg:grid lg:grid-cols-3">
+	<section class="flex flex-col items-center justify-center">
+		<BackyardigansIcon />
+		<p class="text-3xl font-bold uppercase">Backyardigans s.a</p>
+
+
+	</section>
+
+	<section class="flex flex-col gap-4 mt-10">
+		<span class="font-bold uppercase">menu</span>
+
+		<a href="/">Inicio</a>
+		<a href="">Conoce a nuestro equipo</a>
+		<a href="">Mas sobre nosotros</a>
+
+
+	</section>
+
+	<section class="flex flex-col gap-4 mt-10 ">
+		<p class="font-bold uppercase">Envia un mensaje a Backyardigans S.A</p>
+		<ul class="socials flex">
+			<li>
+				<a href="https://facebook.com">
+					<FacebookIcon />
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com">
+					<InstagramIcon />
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedln.com">
+					<LinkedlnIcon />
+				</a>
+			</li>
+			<li>
+				<a href="https://telegram.com">
+					<TelegramIcon />
+
+				</a>
+			</li>
+			<li>
+				<a href="https://youtube.com">
+					<YoutubeIcon />
+				</a>
+			</li>
+			<li>
+				<a href="https://tiktok.com">
+					<TiktokIcon />
+				</a>
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="mt-10 lg:col-span-3">
+		<p class="text-center">Copyright © {new Date().getFullYear()} Backyardigans, All Rights Reserved.</p>
+	</section>
+
+</footer>
+
+<style>
+	.socials {
+		@apply gap-x-4;
+	}
+	footer {
+		background-color: orange;
+	}
+	a {
+		@apply hover:underline;
+	}
+
+</style>
+
