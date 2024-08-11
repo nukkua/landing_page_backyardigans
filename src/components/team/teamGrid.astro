@@ -3,66 +3,32 @@ import TeamCard from './teamCard.astro'
 import { team } from './Team.js'
 ---
 
-<div class='teamGrid-container'>
-  <h1 class='team-title font-bold'>NUESTRO EQUIPO</h1>
+<div class='teamGrid-container py-20'>
+  <h1 class='font-bold text-5xl'>NUESTRO EQUIPO</h1>
   <div class='slider-container'>
-  <div class='cardsContainer'>
-    {
-    team.map(item => 
-      <TeamCard imgURL={item.imgURL} name={item.name} desc={item.desc} position={item.position}/>
-    )
-    }
+	  <div class='grid grid-cols-1 lg:grid-cols-2'>
+		    {
+			    team.map(item => 
+			      <TeamCard imgURL={item.imgURL} name={item.name} desc={item.desc} position={item.position}/>
+			    )
+		    }
+	  </div>
   </div>
-  </div>
-  <span>
-    <button class='slider-btn '></button>
-    <button class='slider-btn '></button>
-
-<script>
-  const container = document.querySelector('.cardsContainer')
-  const btns = document.querySelectorAll('.slider-btn')
-  console.log(btns)
-
-  btns.forEach((btn, i) => {
-
-    btns[i].addEventListener('click', () => {
-      btns[i].classList.remove('btn-slider-selected')
-
-      let position = i
-      position = position * -50
-      console.log('selected', i, position)
-      container.style.transform = `translateX(${position}%)`
-
-    })
-    btns[i].classList.add('btn-slider-selected')
-  })
-</script>
-  </span>
 </div>
 
 <style>
-  .team-title {
-    font-size: 35px;
-  }
 
   .teamGrid-container {
-    padding-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
-    height: fit-content;
     background: orange;
-    font-family: 'Poppins', sans-serif;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
   }
 
-  .btn-slider-selected {
-    background: black;
-  }
 
   .slider-container {
     width: 70%;
@@ -74,17 +40,6 @@ import { team } from './Team.js'
     flex-direction:row;
   }
 
-  .slider-btn {
-    background: white;
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px 0px 10px;
-    border: none
-  }
 
-  .slider-btn:hover {
-    cursor: pointer;
-    scale: 1.15;
-  }
 
 </style>

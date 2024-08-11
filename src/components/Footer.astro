@@ -11,7 +11,7 @@ import YoutubeIcon from "./svg/YoutubeIcon.astro";
 ---
 
 
-<footer class="px-2 py-10 mt-auto lg:grid lg:grid-cols-3">
+<footer class="px-2 py-10 mt-auto lg:grid lg:grid-cols-3 xl:py-40 border-t-white border-t-[3px]">
 	<section class="flex flex-col items-center justify-center">
 		<BackyardigansIcon />
 		<p class="text-3xl font-bold uppercase">Backyardigans s.a</p>
@@ -20,9 +20,9 @@ import YoutubeIcon from "./svg/YoutubeIcon.astro";
 	</section>
 
 	<section class="flex flex-col gap-4 mt-10">
-		<span class="font-bold uppercase">menu</span>
+		<span class="font-bold uppercase xl:text-2xl">menu</span>
 
-		<a href="/">Inicio</a>
+		<a href="/" >Inicio</a>
 		<a href="">Conoce a nuestro equipo</a>
 		<a href="/about">Mas sobre nosotros</a>
 
@@ -30,36 +30,36 @@ import YoutubeIcon from "./svg/YoutubeIcon.astro";
 	</section>
 
 	<section class="flex flex-col gap-4 mt-10 ">
-		<p class="font-bold uppercase">Envia un mensaje a Backyardigans S.A</p>
+		<p class="font-bold uppercase xl:text-2xl">Envia un mensaje a Backyardigans S.A</p>
 		<ul class="socials flex">
 			<li>
-				<a href="https://facebook.com">
+				<a href="https://facebook.com" target="_blank">
 					<FacebookIcon />
 				</a>
 			</li>
 			<li>
-				<a href="https://instagram.com">
+				<a href="https://instagram.com" target="_blank">
 					<InstagramIcon />
 				</a>
 			</li>
 			<li>
-				<a href="https://linkedln.com">
+				<a href="https://bo.linkedin.com/" target="_blank">
 					<LinkedlnIcon />
 				</a>
 			</li>
 			<li>
-				<a href="https://telegram.com">
+				<a href="https://web.telegram.org/a/" target="_blank">
 					<TelegramIcon />
 
 				</a>
 			</li>
 			<li>
-				<a href="https://youtube.com">
+				<a href="https://youtube.com" target="_blank">
 					<YoutubeIcon />
 				</a>
 			</li>
 			<li>
-				<a href="https://tiktok.com">
+				<a href="https://tiktok.com" target="_blank">
 					<TiktokIcon />
 				</a>
 			</li>
@@ -81,7 +81,7 @@ import YoutubeIcon from "./svg/YoutubeIcon.astro";
 		background-color: orange;
 	}
 	a {
-		@apply hover:underline;
+		@apply hover:underline xl:text-lg;
 	}
 
 </style>
