@@ -1,0 +1,25 @@
+---
+import ServiceCard from './ServiceCard.astro'
+import { services } from './services.js'
+---
+
+<div class='services-grid-container'>
+
+  {
+    services.map(service => 
+      <ServiceCard title={service.title} desc={service.desc}/>
+    )
+  }
+
+  
+</div>
+
+<style>
+  .services-grid-container {
+    margin-top: 70px;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+</style>

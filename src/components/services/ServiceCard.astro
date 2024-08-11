@@ -1,0 +1,31 @@
+---
+const { title, desc } = Astro.props
+---
+
+<div class='service-card-container'>
+  <img class='service-card-image' src='https://cdn-icons-png.flaticon.com/512/7959/7959388.png' alt='picture'/>
+  <span>
+    <h2 class='service-card-title font-medium'>{title}</h2>
+    <p class='service-card-desc'>{desc}</p>
+  </span>
+</div>
+
+<style>
+  .service-card-image{
+    margin-right: 30px;
+    height: 180px;
+  }
+
+  .service-card-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .service-card-title {
+    font-size: 35px;
+  }
+
+  .service-card-desc {
+    font-size: 20px;
+  }
+</style>
