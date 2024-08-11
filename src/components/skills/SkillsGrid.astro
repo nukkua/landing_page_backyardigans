@@ -1,0 +1,45 @@
+---
+import ReactIcon from './ReactIcon.astro'
+import HtmlLogo from './HtmlLogo.astro'
+import CSSLogo from './CSSLogo.astro'
+import NodeLogo from './NodeLogo.astro'
+import JSLogo from './JSLogo.astro'
+import AstroLogo from './AstroLogo.astro'
+import TSLogo from './TSLogo.astro'
+import TWLogo from './TWLogo.astro'
+import VueLogo from './VueLogo.astro'
+---
+
+<div class='skills-grid-container'>
+  <h1 class='font-bold skills-title'>Tecnologias que utilizamos</h1>
+  <div class='skills-container'>
+    <ReactIcon/>
+    <HtmlLogo/>
+    <CSSLogo/>
+    <NodeLogo/>
+    <JSLogo/>
+    <AstroLogo/>
+    <TSLogo/>
+    <TWLogo/>
+    <VueLogo/>
+  </div>
+</div>
+
+<style>
+  .skills-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: orange;
+  }
+  .skills-container {
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .skills-title {
+    font-size: 35px;
+  }
+
+</style>
