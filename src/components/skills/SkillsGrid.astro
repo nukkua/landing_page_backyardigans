@@ -10,9 +10,9 @@ import TWLogo from './TWLogo.astro'
 import VueLogo from './VueLogo.astro'
 ---
 
-<div class='skills-grid-container'>
+<div class='skills-grid-container py-10 px-2 lg:py-40'>
   <h1 class='font-bold skills-title'>Tecnologias que utilizamos</h1>
-  <div class='skills-container'>
+  <div class='skills-container grid-cols-1 md:grid-cols-3 lg:grid-cols-9 '>
     <ReactIcon/>
     <HtmlLogo/>
     <CSSLogo/>
@@ -30,13 +30,14 @@ import VueLogo from './VueLogo.astro'
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: orange;
+    justify-content: center;
+    background: white;
   }
   .skills-container {
     margin-top: 40px;
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
   }
   .skills-title {
     font-size: 35px;

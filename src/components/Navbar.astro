@@ -2,6 +2,21 @@
 import BackyardigansIcon from "./svg/BackyardigansIcon.astro";
 
 
+const tabs =  [
+	{
+		name: "Inicio",
+		href: '/',
+	},
+	{
+		name: "Sobre Nosotros",
+		href: '/about',
+	},
+	{
+		name: "Servicios",
+		href: '/services',
+	},
+]
+
 ---
 <header class="bg-white py-5 px-6">
 	<nav class="flex flex-col md:flex-row">
@@ -19,19 +34,14 @@ import BackyardigansIcon from "./svg/BackyardigansIcon.astro";
 
 		</div>
 
-        <ul id="menu">
-            <li >
-		    <a href="/" class="">Inicio</a>
-            </li>
-            <li>
-		    <a href="/about" class="">Sobre Nosotros</a>
-            </li>
-            <li>
-        <a href="/services" class="">Servicios</a>
-            </li>
-            <li>
-		    <a href="/contact" class="">Contacto</a>
-            </li>
+		<ul id="menu">
+			{
+			tabs.map(tab => (
+				<li>
+					<a href={tab.href}>{tab.name}</a>
+				</li>
+				))
+			}
         </ul>
     </nav>
 </header>

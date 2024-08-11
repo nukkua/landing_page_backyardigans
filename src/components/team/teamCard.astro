@@ -1,53 +1,30 @@
 ---
+
+interface Props {
+	imgURL: string;
+	desc: string;
+	name: string;
+	position: string;
+}
 const { imgURL, desc, name, position } = Astro.props
 ---
 
-<div class='teamCard-container'>
-  <img class='card-image' src={imgURL} alt='fotito'/>
-  <p class='card-desc'>{desc}</p>
-  <span class='card-name-position'>
-    <label class='card-name'>{name}</label>
-    <label class='card-position'>{position}</label>
-  </span>
+<div class='flex flex-col gap-4 mt-10 items-center justify-center xl:px-60'>
+	<div class="flex flex-col items-center justify-center">
+	    <label class='card-position'>{position}</label>
+	    <label class='card-name'>{name}</label>
+	</div>
+	<img class='card-image' src={imgURL} alt='fotito'/>
+	<p class='card-desc'>{desc}</p>
 </div>
 
 <style>
-  .teamCard-container {
-    font-family: 'Poppins', sans-serif;
-    min-width: 400px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    margin: 30px 20px 20px 20px;
-    align-items: center;
-    padding-bottom: 35px;
-  }
-  .card-image {
-    width: 150px;
-    height: 150px
-  }
-  .card-desc {
-    font-size: 25px;
-    text-align: center;
-    width:80%;
-    justify-content: center;
-    height: fit-content;
-    margin-bottom: 30px;
-  }
-  .card-name-position {
-    display: flex;
-    flex-direction: column;
-    margin-top: auto;
-    text-align: center;
-  }
-  .card-name {
-    font-size: 40px;
-    font-weight: 600;
-  }
-  .card-position {
-    font-size: 28px;
-    text-align: center;
-    font-weight: 300;
-  }
+	label {
+		@apply font-bold text-center text-2xl;
+	}
+	img {
+		@apply lg:w-[200px] lg:h-[200px];
+		
+	}
 
 </style>
