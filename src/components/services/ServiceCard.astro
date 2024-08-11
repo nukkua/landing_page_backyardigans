@@ -28,4 +28,10 @@ const { title, desc } = Astro.props
   .service-card-desc {
     font-size: 20px;
   }
+
+  @media(max-width: 500px) {
+    .service-card-image {
+      display: none;
+    }
+  }
 </style>

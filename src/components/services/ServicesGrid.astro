@@ -22,4 +22,18 @@ import { services } from './services.js'
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
   }
+
+  @media(max-width: 800px) {
+    .services-grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media(max-width: 375px) {
+    .services-grid-container {
+      width: 100%;
+      padding: 0px 10px 0px 10px;
+    }
+  }
 </style>
