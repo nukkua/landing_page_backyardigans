@@ -1,0 +1,24 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import TrustInUs from '../components/TrustInUs.astro'
+---
+
+<MainLayout>
+  <main class="w-full">
+    <TrustInUs title="Nuestros Productos"/>
+    <div class="products-container">
+      <p class='products-p'>Algunos de nuestros productos mas exitosos</p>
+    </div>
+  </main>
+</MainLayout>
+
+<style>
+  .products-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .products-p {
+    text-align: center;
+    background: white;
+  }
+</style>
