@@ -1,4 +1,39 @@
+---
+const { title, img, desc } = Astro.props
+---
 
 <div class="product-card-container">
-  cards
+  <h2 class="product-card-title font-semibold">{title}</h2>
+  <img class="product-card-image" src={img} alt='fotito'/>
+  <p class="product-card-desc">{desc}</p>
 </div>
+
+<style>
+  .product-card-container {
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 100%;
+    transition: ease-out 200ms;
+  }
+
+  .product-card-image {
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .product-card-title {
+    margin: 40px 40px 40px 40px;
+    font-size: 30px;
+  }
+
+  .product-card-desc {
+    margin: 30px 40px 30px 40px;
+    font-size: 25px;
+  }
+
+  .product-card-container:hover {
+    scale: 1.1;
+    transition: ease-in 190ms;
+  }
+</style>
