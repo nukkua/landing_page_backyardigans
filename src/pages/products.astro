@@ -1,0 +1,34 @@
+---
+import MainLayout from '../layouts/MainLayout.astro'
+import TrustInUs from '../components/TrustInUs.astro'
+import ProductGrid from '../components/products/ProductsGrid.astro'
+---
+
+<MainLayout>
+  <main class="w-full">
+    <TrustInUs title="Nuestros Productos"/>
+    <div class="products-container">
+      <p class='products-p'>Algunos de nuestros productos mas exitosos</p>
+      <ProductGrid/>
+    </div>
+  </main>
+</MainLayout>
+
+<style>
+  .products-container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background: white;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .products-p {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+    font-size: 35px;
+  }
+</style>

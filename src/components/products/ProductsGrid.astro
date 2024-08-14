@@ -1,0 +1,31 @@
+---
+import ProductCard from './ProductsCard.astro'
+---
+
+<div class="product-grid-container">
+  <ProductCard
+      title='Plan Fit'
+      img='../../../public/G1.jpeg'
+      desc='Nuestra plataforma está diseñada específicamente para quienes están comenzando su viaje en el fitness. Ofrecemos planes de entrenamiento personalizados, consejos prácticos y guías paso a paso para ayudarte a alcanzar tus metas de salud y bienestar, sin importar tu nivel de experiencia'
+  /> 
+  <ProductCard
+      title='Gym Virtual'
+      img='../../../public/G3.jpeg'
+      desc='Con nuestra plataforma de gimnasio virtual, puedes entrenar desde la comodidad de tu hogar. Ofrecemos clases en vivo y on-demand, dirigidas por entrenadores profesionales, cubriendo una amplia variedad de disciplinas como yoga, HIIT, pilates y más, para que siempre encuentres el entrenamiento que necesitas'
+  /> 
+  <ProductCard
+      title='AI Gym'
+      img='../../../public/G2.jpeg'
+      desc='Descubre una forma inteligente de entrenar con nuestra plataforma impulsada por IA. Simplemente ingresa tus objetivos, nivel de condición física y preferencias, y nuestro sistema generará una rutina de ejercicios personalizada que se adapta a tus necesidades, optimizando cada entrenamiento para maximizar tus resultados'
+  /> 
+</div>
+
+<style>
+  .product-grid-container {
+    width: 80%;
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+</style>
