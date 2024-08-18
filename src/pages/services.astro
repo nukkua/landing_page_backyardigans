@@ -4,40 +4,34 @@ import ServicesGrid from '../components/services/ServicesGrid.astro'
 ---
 
 <MainLayout title="Services">
-  <main class="w-full">
-	    <div class='services-container py-20'>
-	      <h1 class='services-title font-bold text-center'>Nuestros servicios</h1>
-	      <p class='services-filler-text'>Somos expertos en el desarrollo de soluciones informáticas, contamos con un equipo multidisciplinario con la experiencia necesaria para ayudar a nuestros clientes a conseguir sus objetivos.</p>
-	      <hr class='services-hr'></hr>
-	      <ServicesGrid/>
-	      </div>
-	    </div>
-	</main>
+<main class="w-full">
+	<div class='services-container py-20'>
+		<h1 class='uppercase services-title font-bold text-center'>Nuestros servicios</h1>
+		<p class='services-filler-text'>Somos expertos en el desarrollo de soluciones informáticas, contamos con un equipo multidisciplinario con la experiencia necesaria para ayudar a nuestros clientes a conseguir sus objetivos.</p>
+		<hr class="border-black border-2"/>
+		<ServicesGrid/>
+	</div>
+	</div>
+</main>
 </MainLayout>
 
 <style>
-  .services-container {
-    background: orange;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+	.services-container {
+		background: orange;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
-  .services-filler-text {
-    width: 50%;
-    font-size: 20px;
-    text-align: center;
-  }
+	.services-filler-text {
+		width: 50%;
+		font-size: 20px;
+		text-align: center;
+	}
 
-  .services-title {
-    margin-top: 60px;
-    font-size: 50px;
-  }
+	.services-title {
+		margin-top: 60px;
+		font-size: 50px;
+	}
 
-  .services-hr {
-    margin-top: 40px;
-    border-width: 1px;
-    width: 80%;
-    border-color: black;
-  }
 </style>

@@ -3,37 +3,27 @@ const { title, img, desc } = Astro.props
 ---
 
 <div class="product-card-container">
-  <h2 class="product-card-title font-semibold">{title}</h2>
-  <img class="product-card-image" src={img} alt='fotito'/>
-  <p class="product-card-desc">{desc}</p>
+	<h2 class="product-card-title font-semibold m-6 lg:m-10 text-3xl">{title}</h2>
+	<img class="product-card-image hidden lg:flex" src={img} alt='fotito'/>
+	<p class="product-card-desc lg:text-2xl mx-6 my-5  lg:mx-10 lg:my-8">{desc}</p>
 </div>
 
 <style>
-  .product-card-container {
-    background: white;
-    border: 2px solid black;
-    border-radius: 20px;
-    height: 100%;
-    transition: ease-out 200ms;
-  }
+	.product-card-container {
+		background: white;
+		border: 2px solid black;
+		border-radius: 20px;
+		height: 100%;
+		transition: ease-out 200ms;
+	}
 
-  .product-card-image {
-    height: 300px;
-    overflow-x: hidden;
-  }
+	.product-card-image {
+		height: 300px;
+		overflow-x: hidden;
+	}
 
-  .product-card-title {
-    margin: 40px 40px 40px 40px;
-    font-size: 30px;
-  }
-
-  .product-card-desc {
-    margin: 30px 40px 30px 40px;
-    font-size: 25px;
-  }
-
-  .product-card-container:hover {
-    scale: 1.1;
-    transition: ease-in 190ms;
-  }
+	.product-card-container:hover {
+		scale: 1.1;
+		transition: ease-in 190ms;
+	}
 </style>
