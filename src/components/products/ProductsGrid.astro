@@ -2,7 +2,7 @@
 import ProductCard from './ProductsCard.astro'
 ---
 
-<div class="product-grid-container">
+<div class="product-grid-container grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-14">
   <ProductCard
       title='Plan Fit'
       img='../../../public/G1.jpeg'
@@ -22,10 +22,8 @@ import ProductCard from './ProductsCard.astro'
 
 <style>
   .product-grid-container {
-    width: 80%;
+    width: 70%;
     background: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 50px;
   }
 </style>
