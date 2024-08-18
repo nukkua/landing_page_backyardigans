@@ -1,71 +1,75 @@
-<section class="bg-white flex flex-col items-center justify-center py-10 lg:py-40 px-2 xl:px-96 gap-10">
-    <h2 class="font-bold text-center text-3xl p-5 lg:text-5xl">Descubre más sobre nosotros</h2>
+<section class="bg-white flex flex-col items-center justify-center px-4 gap-5 lg:px-10 py-10 lg:py-40 2xl:px-96">
+	<div class="flex flex-col items-center lg:max-w-[1000px] 2xl:max-w-[2000px] gap-10">
 
-    <!-- Primer bloque: Texto a la izquierda, imagen a la derecha -->
-    <div class="lg:flex lg:px-20 lg:items-center lg:gap-4">
-        <div class="flex flex-col gap-6 xl:px-20 lg:w-1/2">
-            <h3 class="text-center font-bold text-2xl lg:text-4xl">
-                Nos mueve la innovación, la creatividad, la pasión y la determinación.
-            </h3>
-            <p class="home-text text-left font-light">
-                Somos una empresa tecnológica boliviana que crea software innovador para empresas. Nuestros productos están cambiando la forma de trabajar en Bolivia.
-            </p>
-        </div>
-        <div class="lg:w-1/2">
-            <img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/a1/4e/6b/a14e6b41432211faa2726cd100d4eaf2.jpg" alt="">
-        </div>
-    </div>
+		<h2 class="uppercase font-bold text-center text-3xl p-5 lg:text-5xl">Descubre más sobre nosotros</h2>
 
-    <!-- Segundo bloque: Imagen a la izquierda, texto a la derecha -->
-    <div class="lg:flex lg:px-20 lg:items-center lg:gap-4 lg:flex-row-reverse">
-        <div class="flex flex-col gap-6 xl:px-20 lg:w-1/2">
-            <p class="home-text text-left font-light">
-                Somos un equipo boliviano de expertos en tecnología con amplia experiencia en diversos sectores. Desarrollamos soluciones innovadoras y personalizadas para ayudar a nuestros clientes a triunfar en el mundo digital.
-            </p>
-            <p class="home-text text-left font-light">
-                Nuestro enfoque se basa en la colaboración, la excelencia y la entrega de resultados.
-            </p>
-        </div>
-        <div class="lg:w-1/2 flex flex-col items-center justify-center">
-            <img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/13/eb/0f/13eb0fb1aed7e70b0ddd98c9d92ac049.jpg" alt="">
-            <div class="text-center mt-2 xl:mt-10">
-                <a class="about-us-link px-10 py-3 shadow-md border-black border font-semibold bg-orange-500 text-white transition-transform duration-300 ease-in-out hover:scale-105" href="/about">Leer Sobre Nosotros {'>'}</a>
-            </div>
-        </div>
-    </div>
+		<div class="lg:flex lg:items-center lg:gap-4">
+			<div class="flex flex-col gap-6 lg:w-1/2">
+				<h3 class="text-center font-bold text-2xl lg:text-4xl">
+					Nos mueve la innovación, la creatividad, la pasión y la determinación.
+				</h3>
+				<p class="home-text text-left font-light">
+				Somos una empresa tecnológica boliviana que crea software innovador para empresas. Nuestros productos están cambiando la forma de trabajar en Bolivia.
+				</p>
+			</div>
+			<div class="lg:w-1/2">
+				<img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/a1/4e/6b/a14e6b41432211faa2726cd100d4eaf2.jpg" alt="">
+			</div>
+		</div>
+
+		<div class="lg:flex lg:items-center lg:gap-4 lg:flex-row-reverse">
+			<div class="flex flex-col gap-6 lg:w-1/2">
+				<p class="home-text text-left font-light">
+				Somos un equipo boliviano de expertos en tecnología con amplia experiencia en diversos sectores. Desarrollamos soluciones innovadoras y personalizadas para ayudar a nuestros clientes a triunfar en el mundo digital.
+				</p>
+				<p class="home-text text-left font-light">
+				Nuestro enfoque se basa en la colaboración, la excelencia y la entrega de resultados.
+				</p>
+			</div>
+			<div class="lg:w-1/2 flex flex-col items-center justify-center">
+				<img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/13/eb/0f/13eb0fb1aed7e70b0ddd98c9d92ac049.jpg" alt="">
+			</div>
+		</div>
+		<div class="text-center mt-6 xl:mt-8 2xl:mt-10">
+			<a class="about-us-link px-10 py-3 shadow-md border-black border font-semibold bg-orange-500 text-white transition-transform duration-300 ease-in-out hover:scale-105" href="/about">Leer Sobre Nosotros {'>'}</a>
+		</div>
+	</div>
 </section>
 
 <style>
-    a {
-        background-color: orange;
-        transition: transform 0.3s ease-in-out; /* Transición suave */
-    }
-    a:hover {
-        transform: scale(1.05); /* Efecto de movimiento al pasar el ratón sobre el botón */
-    }
-    p {
-        @apply text-left font-light xl:text-xl;
-    }
-    img {
-        border-radius: 50%; /* Imágenes redondeadas */
-        transition: transform 0.3s ease-in-out; /* Transición suave para las imágenes */
-    }
-    img:hover {
-        transform: scale(1.05); /* Efecto de movimiento al pasar el ratón sobre las imágenes */
-    }
+	a {
+		background-color: orange;
+		transition: transform 0.3s ease-in-out; 
+	}
+	a:hover {
+		transform: scale(1.05);
+	}
+	p {
+		@apply text-left font-light xl:text-xl;
+	}
+	img {
+		border-radius: 50%; 
+		transition: transform 0.3s ease-in-out; 
+		@apply cursor-pointer;
 
-    .home-text {
-      text-align: center;
-      font-size: 25px;
-    }
+	}
+	img:hover {
+		transform: scale(1.05); 
+	}
 
-    .about-us-link {
-      color: black;
-      font-size: 23px;
-      border-radius: 10px;
-    }
+	.home-text {
+		text-align: center;
+		font-size: 25px;
+	}
 
-    .about-us-link:hover {
-      background-color: #FFC300;
-    }
+	.about-us-link {
+		color: black;
+		font-size: 23px;
+		border-radius: 10px;
+		display: flex;
+	}
+
+	.about-us-link:hover {
+		background-color: #FFC300;
+	}
 </style>

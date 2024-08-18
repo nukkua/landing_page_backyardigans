@@ -9,9 +9,9 @@ interface Props {
 const { imgURL, desc, name, position } = Astro.props
 ---
 
-<div class='flex flex-col gap-4 mt-10 items-center justify-center xl:px-60'>
+<div class='flex flex-col gap-4 mt-10 items-center justify-center 2xl:px-60'>
 	<div class="flex flex-col items-center justify-center">
-	    <label class='card-position'>{position}</label>
+	    <label class='card-position uppercase'>{position}</label>
 	    <label class='card-name'>{name}</label>
 	</div>
 	<img class='card-image' src={imgURL} alt='fotito'/>
@@ -23,7 +23,7 @@ const { imgURL, desc, name, position } = Astro.props
 		@apply font-bold text-center text-2xl;
 	}
 	img {
-		@apply lg:w-[200px] lg:h-[200px];
+		@apply w-[150px] h-[150px] lg:w-[200px] lg:h-[200px];
 		
 	}
 
