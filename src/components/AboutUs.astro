@@ -2,7 +2,8 @@
 
 ---
 
-<section class="bg-white flex flex-col justify-center px-4 gap-5 lg:flex-row lg:px-10 py-10 lg:py-40 2xl:px-96">
+<div class='about-us-div-container'>
+<section class="about-us-container bg-white flex flex-col justify-center px-4 gap-5 lg:flex-row lg:px-10 py-10 lg:py-40 2xl:px-96">
 	<div class="flex flex-col lg:flex-row items-center lg:max-w-[1000px] 2xl:max-w-[2000px]">
 		<div class="flex flex-col gap-5 lg:gap-14">
 			<h2>Mision</h2>
@@ -15,8 +16,23 @@
 		<img class="hidden lg:flex lg:ml-32 lg:h-[500px] xl:h-[600px]" src="http://www.osbolivia.com/images/nosotros.jpg" alt=""/>
 	</div>
 </section>
+</div>
 
 <style>
+
+  .about-us-container {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 90%;
+  }
+
+  .about-us-div-container {
+    width: 100%;
+    background: white;
+    display: flex;
+    place-content: center;
+  }
+
 	h2 {
 		@apply font-bold text-2xl lg:text-4xl xl:text-5xl;
 	}
