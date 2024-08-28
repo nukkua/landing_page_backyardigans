@@ -3,10 +3,10 @@ import TeamCard from './teamCard.astro'
 import { team } from './Team.js'
 ---
 
-<div class='teamGrid-container py-10 lg:py-40 gap-10'>
+<div class='teamGrid-container' >
   <h1 class='font-bold text-5xl text-center uppercase'>Nuestro equipo</h1>
   <div class='slider-container'>
-	  <div class='grid grid-cols-1 lg:grid-cols-2'>
+    <div class='team-grid-child-container'>
 		    {
 			    team.map(item => 
 			      <TeamCard imgURL={item.imgURL} name={item.name} desc={item.desc} position={item.position}/>
@@ -19,6 +19,7 @@ import { team } from './Team.js'
 <style>
 
   .teamGrid-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +28,9 @@ import { team } from './Team.js'
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding: 0px;
+    padding-top: 50px;
+    grid-gap: 20px;
   }
 
 
@@ -40,6 +44,10 @@ import { team } from './Team.js'
     flex-direction:row;
   }
 
-
+  .team-grid-child-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 </style>

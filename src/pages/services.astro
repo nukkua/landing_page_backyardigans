@@ -8,7 +8,7 @@ import ServicesGrid from '../components/services/ServicesGrid.astro'
 	<div class='services-container py-20'>
 		<h1 class='uppercase services-title font-bold text-center'>Nuestros servicios</h1>
 		<p class='services-filler-text'>Somos expertos en el desarrollo de soluciones informáticas, contamos con un equipo multidisciplinario con la experiencia necesaria para ayudar a nuestros clientes a conseguir sus objetivos.</p>
-		<hr class="border-black border-2"/>
+		<hr class="hr-about-us"/>
 		<ServicesGrid/>
 	</div>
 	</div>
@@ -16,6 +16,13 @@ import ServicesGrid from '../components/services/ServicesGrid.astro'
 </MainLayout>
 
 <style>
+
+  .hr-about-us {
+    margin-top: 60px;
+    width: 90%;
+    border: 1px solid black;
+  }
+
 	.services-container {
 		background: orange;
 		display: flex;

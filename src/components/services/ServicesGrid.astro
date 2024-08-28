@@ -1,26 +1,35 @@
 ---
 import ServiceCard from './ServiceCard.astro'
 import { services } from './services.js'
+import Icon from '../svg/BackyardigansIcon2.astro'
 ---
 
 <div class='services-grid-container'>
-
-  {
-    services.map(service => 
-      <ServiceCard title={service.title} desc={service.desc}/>
-   )
-  }
-
+  <div class='services-grid-child-container'>
+    {
+      services.map(service => 
+        <ServiceCard title={service.title} desc={service.desc}/>
+     )
+    }
+  </div>
   
 </div>
 
 <style>
+
   .services-grid-container {
+    width: 100%;
+    display: flex;
+    place-content: center;
+  }
+
+  .services-grid-child-container {
     margin-top: 70px;
-    width: 60%;
+    width: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
+    padding: 100px 0px 100px 0px;
   }
 
   @media(max-width: 800px) {
