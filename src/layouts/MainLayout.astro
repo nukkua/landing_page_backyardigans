@@ -22,15 +22,23 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-black font-poppins min-h-screen">
-		<Navbar />
-		<slot />
+    <Navbar />
+    <div class="slot-container">
+      <slot />
+    </div>
 		<Footer />
 	</body>
 </html>
 
 
 <style>
-	body::-webkit-scrollbar {
-		display: none;
-	}
+
+  .slot-container {
+    padding-top: 123px;
+  }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
 </style>
