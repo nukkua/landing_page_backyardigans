@@ -1,14 +1,15 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro'
 import ServicesGrid from '../components/services/ServicesGrid.astro'
+import TrustInUs from "../components/TrustInUs.astro";
 ---
 
 <MainLayout title="Services">
 <main class="w-full">
-	<div class='services-container py-20'>
-		<h1 class='uppercase services-title font-bold text-center'>Nuestros servicios</h1>
+    <TrustInUs title="Nuestros Servicios"/>
+  <div class='services-container py-20'>
 		<p class='services-filler-text'>Somos expertos en el desarrollo de soluciones informáticas, contamos con un equipo multidisciplinario con la experiencia necesaria para ayudar a nuestros clientes a conseguir sus objetivos.</p>
-		<hr class="hr-about-us"/>
+    <!--<hr class="hr-about-us"/>-->
 		<ServicesGrid/>
 	</div>
 	</div>
@@ -24,15 +25,15 @@ import ServicesGrid from '../components/services/ServicesGrid.astro'
   }
 
 	.services-container {
-		background: orange;
+		background: white;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	.services-filler-text {
-		width: 50%;
-		font-size: 20px;
+		width: 80%;
+		font-size: 30px;
 		text-align: center;
 	}
 

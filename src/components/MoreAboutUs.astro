@@ -2,7 +2,7 @@
 <section class="mau-section-container bg-white flex flex-col items-center justify-center px-4 gap-5 lg:px-10 py-10 lg:py-40 2xl:px-96">
 	<div class="flex flex-col items-center lg:max-w-[1000px] 2xl:max-w-[2000px] gap-10">
 
-		<h2 class="uppercase font-bold text-center text-3xl p-5 lg:text-5xl">Descubre más sobre nosotros</h2>
+		<h2 class="dabus uppercase font-bold text-center text-3xl p-5 lg:text-5xl">Descubre más sobre nosotros</h2>
 
 		<div class="lg:flex lg:items-center lg:gap-4">
 			<div class="flex flex-col gap-6 lg:w-1/2">
@@ -14,21 +14,21 @@
 				</p>
 			</div>
 			<div class="lg:w-1/2">
-				<img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/a1/4e/6b/a14e6b41432211faa2726cd100d4eaf2.jpg" alt="">
+				<img class="mb-4 w-full rounded-full transition-transform duration-300" src="https://i.pinimg.com/564x/a1/4e/6b/a14e6b41432211faa2726cd100d4eaf2.jpg" alt="">
 			</div>
 		</div>
 
 		<div class="lg:flex lg:items-center lg:gap-4 lg:flex-row-reverse">
 			<div class="flex flex-col gap-6 lg:w-1/2">
+				<h3 class="text-center font-bold text-2xl lg:text-4xl">
+          Nuestro enfoque se basa en la colaboración, la excelencia y la entrega de resultados.
+        </h3>
 				<p class="home-text text-left font-light">
 				Somos un equipo boliviano de expertos en tecnología con amplia experiencia en diversos sectores. Desarrollamos soluciones innovadoras y personalizadas para ayudar a nuestros clientes a triunfar en el mundo digital.
 				</p>
-				<p class="home-text text-left font-light">
-				Nuestro enfoque se basa en la colaboración, la excelencia y la entrega de resultados.
-				</p>
 			</div>
 			<div class="lg:w-1/2 flex flex-col items-center justify-center">
-				<img class="mb-4 w-full rounded-full transition-transform duration-300 hover:scale-105" src="https://i.pinimg.com/564x/13/eb/0f/13eb0fb1aed7e70b0ddd98c9d92ac049.jpg" alt="">
+				<img class="mb-4 w-full rounded-full transition-transform duration-300 " src="https://i.pinimg.com/564x/13/eb/0f/13eb0fb1aed7e70b0ddd98c9d92ac049.jpg" alt="">
 			</div>
 		</div>
 		<div class="text-center mt-6 xl:mt-8 2xl:mt-10">
@@ -42,10 +42,11 @@
 	a {
 		background-color: orange;
 		transition: transform 0.3s ease-in-out; 
-	}
+  }
+  /*
 	a:hover {
 		transform: scale(1.05);
-	}
+  }*/
 	p {
 		@apply text-left font-light xl:text-xl;
 	}
@@ -54,10 +55,11 @@
 		transition: transform 0.3s ease-in-out; 
 		@apply cursor-pointer;
 
-	}
+  }
+  /*
 	img:hover {
 		transform: scale(1.05); 
-	}
+  }*/
 
 	.home-text {
 		text-align: center;
@@ -87,5 +89,9 @@
   .mau-section-container {
     width: 90%;
     padding: 0px;
+  }
+
+  .dabus {
+    margin-top: 40px;
   }
 </style>
