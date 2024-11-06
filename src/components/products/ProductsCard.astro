@@ -2,10 +2,12 @@
 const { title, img, desc } = Astro.props
 ---
 
-<div class="product-card-container">
-	<h2 class="product-card-title font-semibold m-6 lg:m-10 text-3xl">{title}</h2>
-	<img class="product-card-image hidden lg:flex" src={img} alt='fotito'/>
-	<p class="product-card-desc lg:text-2xl mx-6 my-5  lg:mx-10 lg:my-8">{desc}</p>
+<div class="product-card-container z-0">
+	<a href="http://localhost:5173/login" >
+		<h2 class="product-card-title font-semibold m-6 lg:m-10 text-3xl">{title}</h2>
+		<img class="product-card-image hidden lg:flex" src={img} alt='fotito'/>
+		<p class="product-card-desc lg:text-2xl mx-6 my-5  lg:mx-10 lg:my-8">{desc}</p>
+	</a>
 </div>
 
 <style>

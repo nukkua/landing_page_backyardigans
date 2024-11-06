@@ -22,7 +22,7 @@ const tabs =  [
 ]
 
 ---
-<header class="bg-white py-5 px-6 w-full fixed top-o left-0 border-b border-black">
+<header class="bg-white py-5 px-6 w-full fixed top-o left-0 border-b border-black z-10">
 	<nav class="flex flex-col md:flex-row">
 		<div class="flex items-center">
 			<a href="/" class="font-bold flex items-center text-2xl">
@@ -38,7 +38,7 @@ const tabs =  [
 
 		</div>
 
-		<ul id="menu">
+		<ul id="menu" class="flex items-center">
 			{
 			tabs.map(tab => (
 				<li>
